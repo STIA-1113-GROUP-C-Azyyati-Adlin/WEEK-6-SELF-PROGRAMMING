@@ -1,0 +1,11 @@
+Enter subject : 
+Math
+Enter Math Mark : 
+60
+Enter subject : 
+Science
+Enter Science Mark : 
+45
+Pass Math subject only
+Math mark greater than Science mark
+Grade = 'C' 
