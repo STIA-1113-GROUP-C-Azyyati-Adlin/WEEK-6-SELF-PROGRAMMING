@@ -1,0 +1,11 @@
+Output 1:
+Enter the number of x : 
+10
+x is 10
+
+Output 2:
+Enter the number of x : 
+20
+x is 20
+x is 30
+x is not 10 or 20 and 30
