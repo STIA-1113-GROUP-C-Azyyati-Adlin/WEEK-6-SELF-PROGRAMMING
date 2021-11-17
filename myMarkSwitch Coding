@@ -1,0 +1,41 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class myMarkSwitch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scan = new Scanner (System.in);
+                
+        System.out.println("Enter your mark : ");
+        int mark = scan.nextInt();
+        
+        switch (mark/10) {//kena bahagi 10 untuk dapatkan real number
+        
+        case 10:
+        case 9:
+        	System.out.println("Excellent:Grade 'A'");
+            break;
+        
+        case 8:
+        	System.out.println("Very Good:Grade 'B'");
+            break;
+            
+        case 7:
+        	System.out.println("Good:Grade 'C'");
+            break;
+        
+        case 6:
+        	System.out.println("Pass:Grade 'D'");
+            break;
+            
+        case 5:
+        	System.out.println("Pass:Grade 'E'");
+        	break;
+        
+        default :
+        	System.out.println("Fail");
+        }
+	}
+}
