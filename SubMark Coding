@@ -1,0 +1,61 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class SubMark {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scan = new Scanner (System.in);
+        
+        System.out.println("Enter subject : ");
+        String subjectMT = scan.next();
+        
+        System.out.println("Enter Math Mark : ");
+        int mathMark = scan.nextInt();
+        
+        System.out.println("Enter subject : ");
+        String subjectSC = scan.next();
+        
+        System.out.println("Enter Science Mark : ");
+        int scienceMark = scan.nextInt();
+        
+        if ((mathMark > 50) && (scienceMark > 50)) {
+        	System.out.println("Pass both subject");
+        }
+        else if ((mathMark < 50) && (scienceMark > 50)) {
+        	System.out.println("Pass Science subject only");
+        }
+        else if ((mathMark > 50) && (scienceMark < 50)) {
+            System.out.println("Pass Math subject only");
+        }
+        else {
+        	System.out.println("Fail both subject");
+        }	
+        if (mathMark > scienceMark) {
+        	System.out.println("Math mark greater than Science mark");
+        }
+        else {
+        	System.out.println("Math mark less than Science mark");
+        }
+        
+        double average = (mathMark + scienceMark)/2;
+        if ((average>=80) && (average<=100))
+        {
+        	System.out.println("Grade = 'A' ");
+        }
+        else if ((average>=60) && (average<=79))
+        {
+        	System.out.println("Grade = 'B' ");
+        }
+        else if ((average>=50) && (average<=59))
+        {
+        	System.out.println("Grade = 'C' ");
+        }
+        else 
+        {
+        	System.out.println("Grade = 'F' ");
+        }
+	}
+
+}
